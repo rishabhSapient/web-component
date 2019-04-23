@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="/build/mycomponent.js"></script>
+  <style>
+    body{
+      font-family: sans-serif;
+    }
+    .side-nav {
+      margin-top:30px;
+    }
+    .side-nav ul{
+      margin:0;
+      padding:0;
+      list-style-type: none;
+    }
+    .side-nav a{
+      text-decoration: none;
+      color:#333;
+      padding:10px;
+      font-size: 15px;
+      padding-left: 20px;
+    }
+    .side-nav ul li{
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button id="sideDrawerToggle">Side Drawer Open</button>
+  <uc-side-drawer title="Side Drawer Title">
+    <nav class="side-nav">
+      <ul>
+        <li>
+          <a href="#">A Link</a>
+        </li>
+        <li>
+          <a href="#">Another Link</a>
+        </li>
+        <li>
+          <a href="#">A Third Link</a>
+        </li>
+      </ul>
+    </nav>
+  </uc-side-drawer>
+
+</body>
+<script>
+  var sideDrawerToggle = document.querySelector('#sideDrawerToggle');
+  var sideDrawer = document.querySelector('uc-side-drawer');
+  sideDrawerToggle.addEventListener('click', () => {
+    if(!sideDrawer.opened){
+      sideDrawer.open()
+    }
+  })
+</script>
+</html>
