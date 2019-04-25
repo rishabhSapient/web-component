@@ -1,0 +1,38 @@
+:host {
+  background: #ddd;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 4px #ccc;
+  width: 460px;
+  font-family: sans-serif;
+  height: 170px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}
+.form-wrapper input {
+  height: 45px;
+  font-family: sans-serif;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 15px;
+}
+.form-wrapper button {
+  height: 45px;
+  background: #0bb586;
+  width: 30%;
+  border: 0;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.price-txt{
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-top:20px;
+}
